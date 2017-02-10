@@ -1,0 +1,53 @@
+$(function(){
+	var introWidth=$('.introduction').width();
+	var menuWidth=$('.menu').width();
+	$('.profile-btn').on('click',function(){
+		$('.introduction').animate({
+			left:'-'+introWidth
+		},1000);
+		$('.menu').animate({
+			right:'-'+menuWidth
+		},1000);
+		$('.profile-page').attr('style','visibility:block').css('opacity','0').animate({opacity:1},1500);
+	});
+	$('.skill-btn').on('click',function(){
+		$('.introduction').animate({
+			left:'-'+introWidth
+		},1000);
+		$('.menu').animate({
+			right:'-'+menuWidth
+		},1000);
+		$('.skill-page').attr('style','visibility:block').css('opacity','0').animate({opacity:1},1500);
+	});
+	$('.production-btn').on('click',function(){
+		$('.introduction').animate({
+			left:'-'+introWidth
+		},1000);
+		$('.menu').animate({
+			right:'-'+menuWidth
+		},1000);
+		$('.production-page').attr('style','visibility:block').css('opacity','0').animate({opacity:1},1500);
+	});
+	$('.contact-btn').on('click',function(){
+		$('.introduction').animate({
+			left:'-'+introWidth
+		},1000);
+		$('.menu').animate({
+			right:'-'+menuWidth
+		},1000);
+		$('.contact-page').attr('style','visibility:block').css('opacity','0').animate({opacity:1},1500);
+	});
+	$('.close-btn').on('click',function(){
+		$('.home-page').attr('style','visibility:block');
+		$('.introduction').animate({
+			left:0
+		},1000);
+		$('.menu').animate({
+			right:0
+		},1000);
+		$('.profile-page, .skill-page, .production-page, .contact-page').animate({opacity:0},1500,function(){
+			$(this).attr('style','visibility:hidden');
+		});
+	});
+
+})

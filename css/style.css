@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+/*.mask{
+	width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1a1b23;
+}*/
+.col-xl{
+	margin-left:70px;
+}
+.col-size{
+	width: 96px;
+	height: 70px;
+	float: left;
+}
+.col-font{
+	color: #fff;
+	float: left;
+}
+.profile-page,.skill-page,.production-page,.contact-page{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #ccc;
+}
+.img-container{
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-position: bottom;
+	float: left;
+}
+.font-heading{
+	width: 413px;
+	height: 71px;
+	border-bottom: 5px solid  black;
+	text-align: center;	
+	line-height: 71px;
+	font-size: 30px;
+	position: absolute;
+	left: 20px;
+	bottom: 130px;
+}
+.font-heading h1{
+	color: green;
+	left: 20px;
+	bottom: 30px;
+}
+.content-container{
+	width: 50%;
+	height: 100%;
+	float: right;
+	background: #f5f5f5;
+}
+.small-heading{
+	padding: 60px 0 20px 0;
+	font-size: 40px;
+	text-align: center;
+}
